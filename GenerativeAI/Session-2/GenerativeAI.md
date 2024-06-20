@@ -90,6 +90,7 @@ npm init -y
 
 ```sh
 npm install typescript ts-node @types/node --save-dev
+npm install -g typescript
 npm install langchain
 npm i dotenv
 ```
@@ -146,3 +147,34 @@ npx tsc --init
    node_modules
    .env
    ```
+
+10. Create `app.ts` file
+
+    ```ts
+    //import { OpenAI } from "langchain/llms/openai";
+    import { OpenAI } from "@langchain/openai";
+    import "dotenv/config";
+    const llm = new OpenAI({
+      openAIApiKey: process.env.OPENAI_API_KEY,
+      temperature: 0.9,
+    });
+    async function main() {
+      const result = await llm.predict(
+        `What would be a good company name for a company that makes colorful socks?`
+      );
+      console.log(result);
+    }
+    main();
+    ```
+
+11. Transforms TypeScript code into JavaScript code
+
+```bash
+ tsc
+```
+
+12. Run the app
+
+```bash
+ node ./dist/app.js
+```

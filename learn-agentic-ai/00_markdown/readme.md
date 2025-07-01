@@ -148,3 +148,5 @@ x: number = 20;
 
 Gone camping! :tent: Be back soon.  
 That is so funny! :joy:
+
+[Markdown Docs](https://markdownguide.offshoot.io/basic-syntax/)

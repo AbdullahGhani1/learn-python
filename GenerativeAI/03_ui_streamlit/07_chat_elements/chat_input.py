@@ -2,10 +2,21 @@
 
 import streamlit as st
 
-prompt = st.chat_input("Say something")
+prompt: str = st.chat_input("Say something")
+
+
+# data: list[str] = []
+
+# if prompt:
+#     data.append(prompt)
+#     st.write(f"User has send the following prompt: {prompt}")
+
+
+# st.write(data)
+
 
 if 'data' not in st.session_state:
-    st.session_state.data  = []
+    st.session_state.data = []
 
 if prompt:
     st.session_state.data.append(prompt)

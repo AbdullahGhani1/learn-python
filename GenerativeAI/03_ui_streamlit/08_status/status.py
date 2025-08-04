@@ -1,7 +1,7 @@
 import time
 import streamlit as st
 
-with st.status("Downloading data...", expanded=True) as status:
+with st.status("Downloading data...", expanded=False) as status:
     st.write("Searching for data...")
     time.sleep(2)
     st.write("Found URL.")

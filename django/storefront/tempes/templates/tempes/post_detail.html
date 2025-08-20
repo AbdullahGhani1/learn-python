@@ -1,0 +1,7 @@
+{% extends "layout.html" %} 
+{% block title %}{{post.title}} Detail Page{% endblock %} 
+{% block content %}
+<h1>Post Detail Page</h1>
+<div class="text-white leading-relaxed space-y-4 px-8 py-2">{{post.description | safe}}</div>
+
+{% endblock %}

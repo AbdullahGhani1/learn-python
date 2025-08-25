@@ -150,7 +150,7 @@ You can use it to perform various administrative tasks. In that sense, it is a l
 ### manage.py
 
 As mentioned above, the manage.py script can perform everything that the django-admin utility does. However, using manage.py is more straightforward, especially if you are required to work on a single project.
-If you have multiple projects, use django-adminand specify the settings. 
+If you have multiple projects, use django-admin and specify the settings. 
 The general usage of manage.py is as follows: 
 python manage.py <command>
 Let's explore some of the required command options:
